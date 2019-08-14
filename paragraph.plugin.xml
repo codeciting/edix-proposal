@@ -1,0 +1,43 @@
+<plugin>
+  <id>com.codeciting.exitorx.plugins.paragraph</id>
+  <name>自然段插件</name>
+  <!-- 提供资源 -->
+  <provides>
+    <editor>
+      <menus>
+        <menu>
+          <name>自然段</name>
+          <menu-items>
+            <menu-item>
+              <name>插入自然段</name>
+              <icon>xxx.svg</icon>
+              <trigger target="insertParagraph"/>
+            </menu-item>
+            <menu-item>
+              <name>下移自然段</name>
+              ...
+            </menu-item>
+          </menu-items>
+        </menu>
+      </menus>
+      <ui>
+        <form name="custom" script="......js" stylesheet=".........css"/>
+      </ui>
+    </editor>
+    <operations>
+      <operation name="insertParagraph"
+                 class="com.codeciting.exitorx.plugins.paragraph.operations.InsertParagraphOperation">
+        <requires>
+          <display-mode>dialog | popup</display-mode>
+          <form ui="custom">
+            <input type="text" name="name" title="标题" placeholder="请输入标题"/>
+          </form>
+        </requires>
+        <alert>确认创建自然段？</alert>
+      </operation>
+    </operations>
+    <contents>
+      xslt
+    </contents>
+  </provides>
+</plugin>

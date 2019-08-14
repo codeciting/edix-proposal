@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document>
+  <meta>
+    <!--协作者-->
+    <cooperators>
+      <cooperator email="jagger@codeciting.com" nickname="Jagger"/>
+      <cooperator email="oldman@codeciting.com" nickname="OldMan"/>
+    </cooperators>
+
+    <!--插件列表-->
+    <plugins>
+      <plugin id="com.codeciting.exitorx.plugins.paragraph">
+        <configuration>
+          <seperator-element>div</seperator-element>
+        </configuration>
+      </plugin>
+    </plugins>
+  </meta>
+  <content>
+    <com.codeciting.exitorx.plugins.paragraph>
+      <h1>标题</h1>
+      这是一个自然段
+    </com.codeciting.exitorx.plugins.paragraph>
+    <com.codeciting.exitorx.plugins.video>
+      <src>xxxxx.xxxx.xxxxxxxx.xxxx.mp4</src>
+      <cover-image>IMG.png</cover-image>
+    </com.codeciting.exitorx.plugins.video>
+  </content>
+</document>
